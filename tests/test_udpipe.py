@@ -2,10 +2,14 @@
 # -*- coding: utf-8 -*-
 # Author: Arne Neumann <rst-workbench.programming@arne.cl>
 
+import os
 from pathlib import Path
 import pexpect
 import pytest
 import requests
+
+
+UDPIPE1_ENDPOINT = os.environ.get('UDPIPE1_ENDPOINT', 'http://localhost:9090')
 
 
 def test_uppipe_api():
@@ -13,7 +17,7 @@ def test_uppipe_api():
     input_text = Path('tests/fixtures/input_eurostar.txt').read_text()
 
     res = requests.post(
-        '{}/process'.format('http://localhost:9090'),
+        '{}/process'.format(UDPIPE1_ENDPOINT),
         data={'tokenizer': '', 'tagger': '', 'parser': ''},
         files={'data': input_text})
 

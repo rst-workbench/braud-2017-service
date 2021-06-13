@@ -8,6 +8,8 @@ FROM ubuntu:18.04
 ENV MODEL_FILE_NAME test.model
 ENV MODEL_NAME test
 ENV MODEL_DESC test description
+ENV UDPIPE_PORT 9001
+
 
 RUN apt-get -q update && \
     apt-get -q install -y curl gcc g++ build-essential git && \
@@ -26,5 +28,5 @@ RUN BITS=64 MODE=release make -j4 server && \
     mkdir /models && \
     ln -s /udpipe/releases/test_data/${MODEL_FILE_NAME} /models/
 
-EXPOSE 8080
-CMD /udpipe/src/rest_server/udpipe_server "8080" "${MODEL_NAME}" "${MODEL_NAME}" "/models/${MODEL_FILE_NAME}" "${MODEL_DESC}"
+EXPOSE ${UDPIPE_PORT}
+CMD /udpipe/src/rest_server/udpipe_server "${UDPIPE_PORT}" "${MODEL_NAME}" "${MODEL_NAME}" "/models/${MODEL_FILE_NAME}" "${MODEL_DESC}"
