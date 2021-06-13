@@ -1,0 +1,88 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Eurostar has said it is facing an existential threat, as business leaders pleaded with the government to step in and save the "vital link" with Europe.
+1	Eurostar	Eurostar	PROPN	NNP	Number=Sing	3	nsubj	_	_
+2	has	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux	_	_
+3	said	say	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+4	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	_
+5	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux	_	_
+6	facing	face	VERB	VBG	Tense=Pres|VerbForm=Part	3	ccomp	_	_
+7	an	a	DET	DT	Definite=Ind|PronType=Art	9	det	_	_
+8	existential	existential	ADJ	JJ	Degree=Pos	9	amod	_	_
+9	threat	threat	NOUN	NN	Number=Sing	6	obj	_	SpaceAfter=No
+10	,	,	PUNCT	,	_	6	punct	_	_
+11	as	as	SCONJ	IN	_	13	mark	_	_
+12	business	business	NOUN	NN	Number=Sing	13	compound	_	_
+13	leaders	leader	NOUN	NNS	Number=Plur	6	advcl	_	_
+14	pleaded	plead	VERB	VBN	Tense=Past|VerbForm=Part	13	acl	_	_
+15	with	with	ADP	IN	_	17	case	_	_
+16	the	the	DET	DT	Definite=Def|PronType=Art	17	det	_	_
+17	government	government	NOUN	NN	Number=Sing	14	obl	_	_
+18	to	to	PART	TO	_	19	mark	_	_
+19	step	step	VERB	VB	VerbForm=Inf	14	xcomp	_	_
+20	in	in	ADP	IN	_	19	compound:prt	_	_
+21	and	and	CCONJ	CC	_	22	cc	_	_
+22	save	save	VERB	VB	VerbForm=Inf	19	conj	_	_
+23	the	the	DET	DT	Definite=Def|PronType=Art	26	det	_	_
+24	"	"	PUNCT	``	_	26	punct	_	SpaceAfter=No
+25	vital	vital	ADJ	JJ	Degree=Pos	26	amod	_	_
+26	link	link	NOUN	NN	Number=Sing	22	obj	_	SpaceAfter=No
+27	"	"	PUNCT	''	_	26	punct	_	_
+28	with	with	ADP	IN	_	29	case	_	_
+29	Europe	Europe	PROPN	NNP	Number=Sing	26	nmod	_	SpaceAfter=No
+30	.	.	PUNCT	.	_	3	punct	_	SpacesAfter=\n\n
+
+# newpar
+# sent_id = 2
+# text = A 95% drop in passenger numbers has brought the cross-Channel train service to its knees, and the company reiterated on Sunday that while government loans had been extended to aviation, international high-speed rail had also been severely affected by the pandemic.
+1	A	a	DET	DT	Definite=Ind|PronType=Art	3	det	_	_
+2	95	95	NUM	CD	NumType=Card	3	nummod	_	SpaceAfter=No
+3	%	%	SYM	NN	Number=Sing	9	nsubj	_	_
+4	drop	drop	VERB	VB	VerbForm=Inf	3	acl	_	_
+5	in	in	ADP	IN	_	7	case	_	_
+6	passenger	passenger	NOUN	NN	Number=Sing	7	compound	_	_
+7	numbers	number	NOUN	NNS	Number=Plur	4	obl	_	_
+8	has	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux	_	_
+9	brought	bring	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+10	the	the	DET	DT	Definite=Def|PronType=Art	15	det	_	_
+11	cross	cross	NOUN	NN	Number=Sing	13	compound	_	SpaceAfter=No
+12	-	-	PUNCT	HYPH	_	13	punct	_	SpaceAfter=No
+13	Channel	channel	NOUN	NN	Number=Sing	15	compound	_	_
+14	train	train	NOUN	NN	Number=Sing	15	compound	_	_
+15	service	service	NOUN	NN	Number=Sing	9	obj	_	_
+16	to	to	ADP	IN	_	18	case	_	_
+17	its	its	PRON	PRP$	Gender=Neut|Number=Sing|Person=3|Poss=Yes|PronType=Prs	18	nmod:poss	_	_
+18	knees	knee	NOUN	NNS	Number=Plur	9	obl	_	SpaceAfter=No
+19	,	,	PUNCT	,	_	22	punct	_	_
+20	and	and	CCONJ	CC	_	22	cc	_	_
+21	the	the	DET	DT	Definite=Def|PronType=Art	22	det	_	_
+22	company	company	NOUN	NN	Number=Sing	9	conj	_	_
+23	reiterated	reiterate	VERB	VBN	Tense=Past|VerbForm=Part	22	acl	_	_
+24	on	on	ADP	IN	_	25	case	_	_
+25	Sunday	Sunday	PROPN	NNP	Number=Sing	23	obl	_	_
+26	that	that	SCONJ	IN	_	32	mark	_	_
+27	while	while	SCONJ	IN	_	32	mark	_	_
+28	government	government	NOUN	NN	Number=Sing	29	compound	_	_
+29	loans	loan	NOUN	NNS	Number=Plur	32	nsubj:pass	_	_
+30	had	have	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	32	aux	_	_
+31	been	be	AUX	VBN	Tense=Past|VerbForm=Part	32	aux:pass	_	_
+32	extended	extend	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	9	advcl	_	_
+33	to	to	ADP	IN	_	34	case	_	_
+34	aviation	aviation	NOUN	NN	Number=Sing	32	obl	_	SpaceAfter=No
+35	,	,	PUNCT	,	_	34	punct	_	_
+36	international	international	ADJ	JJ	Degree=Pos	40	amod	_	_
+37	high	high	ADJ	JJ	Degree=Pos	39	amod	_	SpaceAfter=No
+38	-	-	PUNCT	HYPH	_	39	punct	_	SpaceAfter=No
+39	speed	speed	NOUN	NN	Number=Sing	40	compound	_	_
+40	rail	rail	NOUN	NN	Number=Sing	45	nsubj:pass	_	_
+41	had	have	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	45	aux	_	_
+42	also	also	ADV	RB	_	45	advmod	_	_
+43	been	be	AUX	VBN	Tense=Past|VerbForm=Part	45	aux:pass	_	_
+44	severely	severely	ADV	RB	_	45	advmod	_	_
+45	affected	affect	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	34	parataxis	_	_
+46	by	by	ADP	IN	_	48	case	_	_
+47	the	the	DET	DT	Definite=Def|PronType=Art	48	det	_	_
+48	pandemic	pandemic	NOUN	NN	Number=Sing	45	obl	_	SpaceAfter=No
+49	.	.	PUNCT	.	_	9	punct	_	SpacesAfter=\n
+
