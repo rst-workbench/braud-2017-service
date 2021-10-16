@@ -5,9 +5,9 @@
 #
 FROM ubuntu:18.04
 
-ENV MODEL_FILE_NAME test.model
-ENV MODEL_NAME test
-ENV MODEL_DESC test description
+ENV DEFAULT_MODEL english-ewt-ud-2.5-191206.udpipe
+ENV MODEL_EN english-ewt-ud-2.5-191206.udpipe
+ENV MODEL_DE german-hdt-ud-2.5-191206.udpipe
 ENV UDPIPE_PORT 9001
 
 
@@ -29,4 +29,7 @@ RUN BITS=64 MODE=release make -j4 server && \
     ln -s /udpipe/releases/test_data/${MODEL_FILE_NAME} /models/
 
 EXPOSE ${UDPIPE_PORT}
-CMD /udpipe/src/rest_server/udpipe_server "${UDPIPE_PORT}" "${MODEL_NAME}" "${MODEL_NAME}" "/models/${MODEL_FILE_NAME}" "${MODEL_DESC}"
+
+# udpipe_server [options] port default_model_name MODEL_1 ... MODEL_N
+# where each MODEL is represented by three variables (model_name model_file model_description)
+CMD /udpipe/src/rest_server/udpipe_server "${UDPIPE_PORT}" "${DEFAULT_MODEL}" "${MODEL_EN}" "/models/${MODEL_EN}" "${MODEL_EN}" "${MODEL_DE}" "/models/${MODEL_DE}" "${MODEL_DE}"

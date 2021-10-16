@@ -1,46 +1,12 @@
 version: '3.3'
 services:
 
-  #~ corenlp:
-    #~ image: "nlpbox/corenlp:3.9.2"
-    #~ environment:
-      #~ - JAVA_XMX=4g
-    #~ ports:
-      #~ - "9000:9000"
-
-  #~ neuralseg:
-    #~ image: "nlpbox/neuraleduseg-service:latest"
-    #~ ports:
-      #~ - "9001:8000"
-    #~ entrypoint: >
-      #~ hug -f neuralseg/splitter_api.py
-
-  #~ stagedp:
-    #~ build: .
-    #~ environment:
-      #~ - CORENLP_ENDPOINT=http://corenlp:9000
-      #~ - NEURALSEG_ENDPOINT=http://neuralseg:8000 # we're using the internal container port, b/c this is not via --net host
-    #~ ports:
-      #~ - "9002:8000"
-    #~ entrypoint: >
-      #~ sh -c "python wait_for_it.py -t 20 $${CORENLP_ENDPOINT} &&
-             #~ python wait_for_it.py -t 30 $${NEURALSEG_ENDPOINT}/status &&
-             #~ pytest -v"
-
-#~ start:
-    #~ docker run -v ~/Downloads/udpipe/1:/models \
-        #~ -p 9090:8080 \
-        #~ -e MODEL_FILE_NAME=english-ewt-ud-2.5-191206.udpipe \
-        #~ -e MODEL_NAME=english-ewt \
-        #~ -it udpipe1
-
   udpipe1:
     build:
       context: .
       dockerfile: Dockerfile-udpipe-1
     environment:
-      - MODEL_FILE_NAME=english-ewt-ud-2.5-191206.udpipe
-      - MODEL_NAME=english-ewt
+      - DEFAULT_MODEL=english-ewt-ud-2.5-191206.udpipe
     volumes:
       - "./udpipe-models:/models:ro"
     ports:

@@ -1,0 +1,90 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Eurostar hat mitgeteilt, dass es vor einer existenziellen Bedrohung steht, während führende Wirtschaftsvertreter an die Regierung appellierten, einzuschreiten und die "lebenswichtige Verbindung" mit Europa zu retten.
+1	Eurostar	Eurostar	PROPN	NE	Person=3	3	nsubj	_	_
+2	hat	haben	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux	_	_
+3	mitgeteilt	mitteilen	VERB	VVPP	Aspect=Perf|VerbForm=Part	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	$,	PunctType=Comm	11	punct	_	_
+5	dass	dass	SCONJ	KOUS	_	11	mark	_	_
+6	es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	11	nsubj	_	_
+7	vor	vor	ADP	APPR	AdpType=Prep|Case=Dat	10	case	_	_
+8	einer	einer	DET	ART	Case=Dat|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
+9	existenziellen	existenziellen	ADJ	ADJA	_	10	amod	_	_
+10	Bedrohung	Bedrohung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	11	obl	_	_
+11	steht	stehen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	ccomp	_	SpaceAfter=No
+12	,	,	PUNCT	$,	PunctType=Comm	19	punct	_	_
+13	während	während	SCONJ	KOUS	_	19	mark	_	_
+14	führende	führen	ADJ	ADJA	Degree=Pos|Number=Plur	15	amod	_	_
+15	Wirtschaftsvertreter	Vertreter	NOUN	NN	Gender=Masc|Number=Plur|Person=3	19	nsubj	_	_
+16	an	an	ADP	APPR	AdpType=Prep|Case=Acc	18	case	_	_
+17	die	die	DET	ART	Case=Acc|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
+18	Regierung	Regierung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	19	obl	_	_
+19	appellierten	appellieren	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	11	ccomp	_	SpaceAfter=No
+20	,	,	PUNCT	$,	PunctType=Comm	21	punct	_	_
+21	einzuschreiten	einschreiten	VERB	VVIZU	VerbForm=Inf	19	conj	_	_
+22	und	und	CCONJ	KON	_	31	cc	_	_
+23	die	die	DET	ART	Case=Acc|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
+24	"	"	PUNCT	$(	PunctType=Brck	26	punct	_	SpaceAfter=No
+25	lebenswichtige	lebenswichtig	ADJ	ADJA	Degree=Pos|Gender=Fem|Number=Sing	26	amod	_	_
+26	Verbindung	Verbindung	NOUN	NN	Gender=Fem|Number=Sing|Person=3	31	obj	_	SpaceAfter=No
+27	"	"	PUNCT	$(	PunctType=Brck	26	punct	_	_
+28	mit	mit	ADP	APPR	AdpType=Prep|Case=Dat	29	case	_	_
+29	Europa	Europa	PROPN	NE	Gender=Fem|Number=Sing|Person=3	26	nmod	_	_
+30	zu	zu	PART	PTKZU	PartType=Inf	31	mark	_	_
+31	retten	retten	VERB	VVINF	VerbForm=Inf	19	conj	_	SpaceAfter=No
+32	.	.	PUNCT	$.	PunctType=Peri	3	punct	_	SpacesAfter=\n\n
+
+# newpar
+# sent_id = 2
+# text = Ein Rückgang der Passagierzahlen um 95 % hat den Zugdienst über den Ärmelkanal in die Knie gezwungen.
+1	Ein	Ein	DET	ART	Case=Nom|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	Rückgang	Rückgang	NOUN	NN	Gender=Masc|Number=Sing|Person=3	17	nsubj	_	_
+3	der	der	DET	ART	Case=Gen|Number=Plur|PronType=Art	4	det	_	_
+4	Passagierzahlen	Passagierzahl	NOUN	NN	Gender=Fem|Number=Plur|Person=3	2	nmod	_	_
+5	um	um	ADP	APPR	AdpType=Prep|Case=Acc	7	case	_	_
+6	95	95	NUM	CARD	Number=Plur|NumType=Card|Person=3	7	nummod	_	_
+7	%	%	NOUN	NN	Gender=Neut|Number=Plur|Person=3	4	nmod	_	_
+8	hat	haben	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	aux	_	_
+9	den	den	DET	ART	Case=Acc|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
+10	Zugdienst	Dienst	NOUN	NN	Gender=Masc|Number=Sing|Person=3	17	obj	_	_
+11	über	über	ADP	APPR	AdpType=Prep|Case=Acc	13	case	_	_
+12	den	den	DET	ART	Case=Acc|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
+13	Ärmelkanal	ärmelkanal	X	FM	Foreign=Yes|Person=3	17	obl	_	_
+14	in	in	ADP	APPR	AdpType=Prep|Case=Acc	16	case	_	_
+15	die	die	DET	ART	Case=Acc|Number=Plur|PronType=Art	16	det	_	_
+16	Knie	Knie	NOUN	NN	Gender=Neut|Number=Plur|Person=3	17	obl	_	_
+17	gezwungen	zwingen	VERB	VVPP	Aspect=Perf|VerbForm=Part	0	root	_	SpaceAfter=No
+18	.	.	PUNCT	$.	PunctType=Peri	17	punct	_	_
+
+# sent_id = 3
+# text = Das Unternehmen bekräftigte am Sonntag, dass zwar staatliche Kredite auf die Luftfahrt ausgeweitet wurden, aber auch der internationale Hochgeschwindigkeitszug von der Pandemie stark betroffen sei.
+1	Das	Das	DET	ART	Case=Nom|Gender=Neut|Number=Sing|PronType=Art	2	det	_	_
+2	Unternehmen	Unternehmen	NOUN	NN	Gender=Neut|Number=Sing|Person=3	3	nsubj	_	_
+3	bekräftigte	bekräftigen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+4	am	am	ADP	APPRART	AdpType=Prep|Case=Dat|PronType=Art	5	case	_	_
+5	Sonntag	Sonntag	NOUN	NN	Gender=Masc|Number=Sing|Person=3	3	obl	_	SpaceAfter=No
+6	,	,	PUNCT	$,	PunctType=Comm	14	punct	_	_
+7	dass	dass	SCONJ	KOUS	_	14	mark	_	_
+8	zwar	zwar	ADV	ADV	_	14	advmod	_	_
+9	staatliche	staatlich	ADJ	ADJA	Degree=Pos|Number=Plur	10	amod	_	_
+10	Kredite	Kredit	NOUN	NN	Gender=Masc|Number=Plur|Person=3	14	nsubj:pass	_	_
+11	auf	auf	ADP	APPR	AdpType=Prep|Case=Acc	13	case	_	_
+12	die	die	DET	ART	Case=Acc|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
+13	Luftfahrt	Luftfahrt	NOUN	NN	Gender=Fem|Number=Sing|Person=3	10	nmod	_	_
+14	ausgeweitet	ausweiten	VERB	VVPP	Aspect=Perf|VerbForm=Part	3	ccomp	_	_
+15	wurden	werden	AUX	VAFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	14	aux:pass	_	SpaceAfter=No
+16	,	,	PUNCT	$,	PunctType=Comm	21	punct	_	_
+17	aber	aber	CCONJ	KON	_	21	cc	_	_
+18	auch	auch	ADV	ADV	_	21	advmod	_	_
+19	der	der	DET	ART	Case=Nom|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_
+20	internationale	international	ADJ	ADJA	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	21	amod	_	_
+21	Hochgeschwindigkeitszug	Hochgeschwindigkeitszug	NOUN	NN	Gender=Masc|Number=Sing|Person=3	26	nsubj:pass	_	_
+22	von	von	ADP	APPR	AdpType=Prep|Case=Dat	24	case	_	_
+23	der	der	DET	ART	Case=Dat|Gender=Fem|Number=Sing|PronType=Art	24	det	_	_
+24	Pandemie	Pandemie	NOUN	NN	Gender=Fem|Number=Sing|Person=3	21	nmod	_	_
+25	stark	stark	ADJ	ADJD	Degree=Pos|Variant=Short	26	advmod	_	_
+26	betroffen	betreffen	VERB	VVPP	Aspect=Perf|VerbForm=Part	3	ccomp	_	_
+27	sei	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	26	aux:pass	_	SpaceAfter=No
+28	.	.	PUNCT	$.	PunctType=Peri	3	punct	_	SpacesAfter=\n
+
